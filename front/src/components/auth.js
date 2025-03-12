@@ -31,7 +31,7 @@ function Auth() {
 
     const {  username, avatarUrl, password, phoneNumber } = form;
 
-    const URL = "http://localhost:3001/auth";
+    const URL = "https://stream-chat-server.vercel.app/auth";
     const {
       data: { token, userId, hashedPassword, fullName },
     } = await axios.post(`${URL}/${isSignUp ? "signup" : "login"}`, {
