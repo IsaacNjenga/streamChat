@@ -7,10 +7,6 @@ import { ChannelListContainer, ChannelContainer, Auth } from "./components";
 import { useState } from "react";
 
 const apiKey = process.env.REACT_APP_STREAM_API_KEY;
-console.log("process", process.env.REACT_APP_STREAM_API_KEY);
-
-console.log("apiKey", apiKey);
-
 const client = StreamChat.getInstance(apiKey);
 
 const cookies = new Cookies();
